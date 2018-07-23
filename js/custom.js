@@ -14,6 +14,10 @@ $(function () {
         },500);
         
     })
+
+    $('.fa-chevron-right').click(function(){
+        alert('dfgdfg');
+    })
   
 
 
