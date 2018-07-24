@@ -10,7 +10,6 @@
 body{
 
     font-family: 'Open Sans', sans-serif;
-    height: 3000px;
 
 }
 
@@ -30,7 +29,10 @@ body{
  .header .navbar{
      overflow: hidden;
      padding: 20px 0;
+ }
 
+ .header .navbar .logo{
+     font-size: 24px
  }
 
  .header .navbar .links{
@@ -87,9 +89,9 @@ font-size: 50px;
  .header .arrow i{
     border: 2px solid #ccc;
     border-radius: 50%;
-    height: 33px;
-    width: 33px;
-    line-height: 33px;
+    height: 40px;
+    width: 40px;
+    line-height: 32px;
     cursor: pointer;
  }
 
@@ -249,8 +251,15 @@ font-size: 50px;
     width: 30%;
     overflow: hidden ;
     margin-left: 1.3333%;
+    margin-bottom: 12px;
+    border-radius: 10px;
     position: relative; 
 
+}
+
+
+.our-work .item-box .item:hover .over {
+    display: block;
 }
 
 
@@ -262,9 +271,13 @@ font-size: 50px;
     height: 100%;
     background-color: rgba(247, 96, 14, .8);
     color: #FFF;
-    
-
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -transition: all .5s ease-in-out;
+    display: none;
 }
+
+
 
 .our-work .item-box .item img {
     width: 100%
@@ -326,7 +339,6 @@ font-size: 50px;
 .testim .client p{
     line-height: 2;
     font-style: italic
-
 }
 
 .testim .fa-chevron-right,
@@ -352,12 +364,215 @@ font-size: 50px;
     left: 0;
 }
 
-
-
 /* End testim */
 
+/* Start Our team */
+.our-team{
+    padding: 50px 0;
+}
+
+.our-team h2{
+    font-size: 35px;
+    margin-bottom: 0;
+
+}
+
+.our-team .main{
+    margin: 10px 0 40px;
+    line-height: 2;
+    color: #999;
+    font-size: 20px;
+}
+
+.our-team .the-team{
+    overflow: hidden ;
+}
+
+.our-team .the-team .person{
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    position: relative;  
+    color: #888
+}
+
+.our-team .the-team .person img{
+    width: 265px;
+    height: 290px;
+    
+    filter: grayscale();
+    -webkit-filter: grayscale();
+}
 
 
+
+.our-team .the-team .person p{
+font-size: 15px;
+
+}
+
+.our-team .the-team .social-icons i{
+    background-color: #777;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #FFF
+}
+
+.our-team .the-team .person:hover img{
+    filter: none;
+    -webkit-filter: grayscale(0);
+
+    
+ }
+
+
+.our-team .the-team .person:hover {
+    color: #555
+}
+
+.our-team .the-team .person:hover .social-icons .fa-facebook-f{
+background-color: #3B5998;
+ color: #FFF
+}
+
+.our-team .the-team .person:hover .social-icons .fa-twitter{
+     background-color: #1DA1F2;
+     color: #FFF
+}
+
+.our-team .the-team .person:hover .social-icons .fa-google-plus-g{
+    background-color: #DD4B39;
+    color: #FFF
+}
+/* End Our team */
+
+/* Start Contact */
+.contact{
+    background: url('../images/subscribe.png');
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+
+}
+
+.contact .overlay{
+    padding: 50px 0;
+    color: #FFF;
+
+}
+
+.contact  h2{
+    font-size: 35px;
+
+}
+
+.contact  form{
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden
+}
+
+.contact  form input[type="text"],
+.contact  form input[type="email"]
+{
+    width: 48%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #FFF;
+}
+
+
+.contact  form textarea{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #FFF;
+
+}
+
+.contact  form input[type="text"]{
+    float: left;
+}
+
+
+.contact  form input[type="email"]{
+    float: right;
+}
+
+.contact  form .info{
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.contact  form .info button{
+    float: left;
+    padding: 10px;
+    width: 200px;
+    font-size: 14px;
+    background-color: #f7600e;
+    border: none;
+    color: #FFF;
+    border-radius: 10px;
+   
+}
+
+.contact  form .info .form-icons{
+    float: right;
+}
+
+.contact  form .info .form-icons i{
+background-color: #777;
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50%;
+color: #FFF;
+}
+
+.contact  form .info .form-icons .fa-facebook-f{
+    background-color: #3B5998;
+     color: #FFF
+    }
+    
+    .contact  form .info .form-icons .fa-twitter{
+         background-color: #1DA1F2;
+         color: #FFF
+    }
+    
+    .contact  form .info .form-icons .fa-google-plus-g{
+        background-color: #DD4B39;
+        color: #FFF
+    }
+/* End Contact */
+/* Start Footer */
+.footer{
+    background-color: #3b434c;
+    color: #FFF;
+    overflow: hidden;
+    padding: 30px 0 ;
+}
+
+.footer .copyright{
+    float: left;
+}
+
+.footer .design{
+    float: right;
+
+}
+/* End Footer */
 
 /* Start My Framewoek */
 .container{
